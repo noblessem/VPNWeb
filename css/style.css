@@ -704,8 +704,9 @@ background:url(../img/svg/greenMark.svg) no-repeat left bottom 90%;
 .plans__text{
 	margin:0 auto;
 	text-align: center;
+	padding-top: 80px;
 }
-.plans__title{
+.titles{
 	font-weight: 500;
 font-size: 35px;
 line-height: 50px;
@@ -715,7 +716,7 @@ text-align: center;
 
 color: #0B132A;
 }
-.plans__desc{
+.descs{
 	font-size: 16px;
 line-height: 30px;
 /* or 187% */
@@ -728,18 +729,21 @@ color: #4F5665;
 .plans__content{
 	padding-top: 60px;
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .plan{
 	display: flex;
 	flex-direction: column;
-	padding: 50px 70px 50px 70px;
+	flex-wrap:wrap;
+	align-items: center;	
+	padding: 50px 15px;
 	text-align: center;
 	background: #FFFFFF;
 	border: 2px solid #DDDDDD;
 	box-sizing: border-box;
 	border-radius: 10px;
 	justify-content: space-between;
+	flex-basis:32%;
 }
 .plan:hover{
 	border: 2px solid #F53838;
@@ -753,7 +757,7 @@ color: #4F5665;
 	text-align: left;
 }
 .plan__list li{
-	
+align-items:center;
 	padding-left: 35px;
 	font-size: 14px;
 	line-height: 30px;
@@ -808,4 +812,24 @@ transition: all 0.2s ease;
 }
 .global{
 	padding-top: 150px;
+}
+.global__content{
+	margin: 0 auto;
+	text-align: center;
+}
+.global__desc{
+	padding-top: 20px;
+}
+.global__img{
+	padding-top: 150px;
+	
+}
+.companies__container{
+	display:flex;
+	flex-wrap:nowrap;
+	align-items: center;
+	justify-content: center;
+}
+.company__img{
+	padding-right: 15px;
 }
