@@ -5,41 +5,56 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="shortcut icon" href="./img/svg/favicon.svg" type="image/x-icon" />
+	<title>LaslesVPN</title>
+	<link rel="stylesheet" href="css/iconfonts.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
-<body>
+<body id="body">
 	<header class="header">
 		<div class="wrapper">
 			<div class="header__container">
-
-
+				<div class="container-centre">
 				<div class="header__logo-container">
 					<img src="./img/svg/logo.svg" alt="" class="header__logo">
 					<span>Lasles<span class="bold__text">VPN</span></span>
 				</div>
-
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li><a class="header__nav-link" href="#">About</a></li>
-						<li><a class="header__nav-link" href="#">Features</a></li>
-						<li><a class="header__nav-link" href="#">Pricing</a></li>
-						<li><a class="header__nav-link" href="#">Testimonials</a></li>
-						<li><a class="header__nav-link" href="#">Help</a></li>
-					</ul>
-				</nav>
-				<div class="header__login">
-					<button class="signin-btn btn-def">Sign In</button>
-					<button class="signup-btn btn-def">Sign Up</button>
-
-
+				<div class="header__burger" id ="header__burger" onclick="burgerUse()"> 
+					<div class="burger__line">
+						
+					</div>
 				</div>
+
+				<nav class="header__nav" id="header__nav">
+					<div class="header__nav-list-container">
+					<ul class="header__nav-list" >
+						<li><a class="header__nav-link js-scroll" href="#about">About</a></li>
+						<li><a class="header__nav-link js-scroll" href="#features">Features</a></li>
+						<li><a class="header__nav-link js-scroll" href="#pricing">Pricing</a></li>
+						<li><a class="header__nav-link js-scroll" href="#testimonials">Testimonials</a></li>
+						<li><a class="header__nav-link js-scroll" href="#help">Help</a></li>
+					</ul>
+						<div class="header__login" id="header__login">
+							<button class="signin-btn btn-def">Sign In</button>
+							<button class="signup-btn btn-def">Sign Up</button>
+						</div>
+					</div>
+					
+					
+				</nav>
 			</div>
-			<div class="header__content">
+				
+				
+			</div>
+			<div class="header__content" id="about">
 				<div class="header__content-main">
 					<h1 class="header__title">
 						Want anything to be easy with <span class="bold__text">LaslesVPN</span>.
@@ -47,7 +62,7 @@
 					<h2 class="header__desc"> Provide a network for all your needs with ease and fun using <span
 							class="desc__bold">LaslesVPN</span> discover
 						interesting features from us.</h2>
-					<button class="header__start-button btn-def">Get Started</button>
+					<button class="header__start-button btn-red btn-def">Get Started</button>
 				</div>
 				<div class="header__content-img-container">
 					<img src="./img/svg/header-pic.svg" alt="" class="main__img">
@@ -69,7 +84,7 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="features">
+		<section class="features" id ="features">
 			<div class="wrapper">
 				<div class="features__container">
 					<div class="features__content">
@@ -100,7 +115,7 @@
 			</div>
 
 		</section>
-		<section class="plans grey-bg">
+		<section class="plans grey-bg" id="pricing">
 			<div class="wrapper">
 				<div class="plans__container">
 					<div class="plans__text">
@@ -111,7 +126,7 @@
 							Let's choose the package that is best for you and explore it <br>happily and cheerfully.
 						</h3>
 					</div>
-					
+
 					<div class="plans__content">
 						<div class="plan">
 							<div class="plan__header">
@@ -120,33 +135,33 @@
 									Free Plan
 								</p>
 							</div>
-							
+
 							<div class="plan__items">
 								<ul class="plan__list">
 									<li>Unlimited Bandwitch</li>
 									<li>Encrypted Connection</li>
 									<li>No Traffic Logs</li>
 									<li>Works on All Devices</li>
-	
+
 								</ul>
 							</div>
-							
+
 							<div class="plan__footer">
 								<p class="plan__price">
 									Free
 								</p>
 								<button class="select__plan-btn btn-def">Select</button>
 							</div>
-							
+
 
 						</div>
 						<div class="plan">
 							<div class="plan__header">
 								<img src="./img/svg/PremiumBox.svg" alt="Plan pic" class="plan__img">
 								<p class="plan__name">
-									Standard Plan								</p>
+									Standard Plan </p>
 							</div>
-							
+
 							<div class="plan__items">
 								<ul class="plan__list">
 									<li>Unlimited Bandwitch</li>
@@ -154,17 +169,17 @@
 									<li>Yes Traffic Logs</li>
 									<li>Works on All Devices</li>
 									<li>Connect Anywhere</li>
-	
-	
+
+
 								</ul>
 							</div>
-							
+
 							<div class="plan__footer">
 								<p class="plan__price">
 									$9 / <span class="brightless__text">mo</span>
 								</p>
 								<button class="select__plan-btn btn-def">Select</button>
-						</div>
+							</div>
 						</div>
 						<div class="plan">
 							<div class="plan__header">
@@ -173,7 +188,7 @@
 									Premium Plan
 								</p>
 							</div>
-							
+
 							<div class="plan__items">
 								<ul class="plan__list">
 									<li>Unlimited Bandwitch</li>
@@ -184,10 +199,10 @@
 									<li>Get New Features</li>
 								</ul>
 							</div>
-							
+
 							<div class="plan__footer">
 								<p class="plan__price">
-									$12 / <span class="brightless__text">mo</span> 
+									$12 / <span class="brightless__text">mo</span>
 								</p>
 								<button class="select__plan-btn btn-def">Select</button>
 							</div>
@@ -197,31 +212,444 @@
 				</div>
 			</div>
 		</section>
-		<section class="global grey-bg">
+		<section class="global">
 			<div class="wrapper">
-				 <div class="global__cotainer">
-					
-					 <div class="global__content">
+				<div class="global__cotainer">
+
+					<div class="global__content">
 						<h2 class="global__title titles">
 							Huge Global Network <br>of Fast VPN
-						 </h2>
-						 <h3 class="global__desc descs">
-							See <span  class="desc__bold">LaslesVPN</span> everywhere to make it easier for you when you move <br>locations.
-						 </h3>
-						 <img src="./img/svg/map.svg" alt="Map pic" class="global__img">
-				<div class="companies__container">
-					<img src="./img/svg/netflix.svg" alt="" class="company__img">
-					<img src="./img/svg/reddit.svg" alt="" class="company__img">
-					<img src="./img/svg/amazon.svg" alt="" class="company__img">
-					<img src="./img/svg/discord.svg" alt="" class="company__img">
-					<img src="./img/svg/sptify.svg" alt="" class="company__img">
+						</h2>
+						<h3 class="global__desc descs">
+							See <span class="desc__bold">LaslesVPN</span> everywhere to make it easier for you when you move
+							<br>locations.
+						</h3>
+						<img src="./img/svg/map.svg" alt="Map pic" class="global__img">
+						<div class="companies__container">
+							<img src="./img/svg/netflix.svg" alt="" class="company__img">
+							<img src="./img/svg/reddit.svg" alt="" class="company__img">
+							<img src="./img/svg/amazon.svg" alt="" class="company__img">
+							<img src="./img/svg/discord.svg" alt="" class="company__img">
+							<img src="./img/svg/sptify.svg" alt="" class="company__img">
 
-				</div>
 						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-	</main>
+		<section class="customers" id="testimonials">
+			<div class="wrapper">
+				<div class="customers__container">
+					<div class="customers__text">
+						<h2 class="customers__title titles">
+							Trusted by Thousands of Happy Customer
+						</h2>
+						<h3 class="customers__desc descs">
+							These are the stories of our customers who have joined us with great pleasure when using this crazy
+							feature.
+						</h3>
+					</div>
+					<div class="slider-carousel">
+						<div class="swiper-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
 
+											<img src="/img/svg/comment1.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt=""></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment2.svg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“I like it because I like to travel far and still can connect with high speed.”. </div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment3.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment3.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment3.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment3.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment3.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment3.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>`
+								<div class="swiper-slide slide-content">
+									<div class="comment__info">
+										<div class="coment__img-container">
+
+											<img src="/img/svg/comment1.jpg" alt="" class="comment__img">
+
+										</div>
+										<div class="commentator__info">
+											<p class="name">
+												Viezh Robert
+											</p>
+											<p class="country">
+												Warsaw, Poland
+											</p>
+										</div>
+										<div class="commentator__rate">
+											<span class="rating">4.5</span>
+											<span class="star"><img src="./img/svg/star.png" alt="" ></span>
+										</div>
+
+									</div>
+									<div class="comment__text">
+										<div class="comment__desc">
+											“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+											and so far there have been no problems. LaslesVPN always the best”.
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- If we need pagination -->
+
+
+							<!-- If we need navigation buttons -->
+
+
+							<!-- If we need scrollbar -->
+
+						</div>
+						<!-- <div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div> -->
+
+						<div class="navigations">
+							<div class="swiper-pagination">
+							</div>
+							<div class="buttons__container">
+
+
+								<div class="button-prev ">
+
+								</div>
+								<div class="button-next"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class=" subscribe ">
+			<div class="wrapper subscribe-wrapper">
+				<div class="subscribe__container">
+					<div class="subscribe__content">
+						<h2 class="subscribe__title titles">
+							Subscribe Now for Get Special Features!
+						</h2>
+						<h3 class="susbcribe__desc descs">
+							Let's subscribe with us and find the fun.
+						</h3>
+					</div>
+					<div class="btn-sub-container">
+						<button class="subscribe-btn btn-red btn-def">
+							Subscribe Now
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer" id ="help">
+		<div class="wrapper">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__column column1">
+						<img src="./img/svg/logo.svg" alt="" class="footer__logo">
+						<span>Lasles<span class="bold__text">VPN</span></span>
+						<p class="footer__desc">
+							<span class="bold__text">LaslesVPN</span> is a private virtual network that has unique features and
+							has high security.
+						</p>
+						<div class="footer__social">
+							<a href="#" class="social _icon-facebook"></a>
+							<a href="#" class="social _icon-tweet"></a>
+							<a href="#" class="social _icon-instagram"></a>
+
+
+						</div>
+					</div>
+					<div class="footer__column column2">
+						<ul class="footer__list">
+							<li class="footer__list-name">
+								Product
+							</li>
+							<li>
+								<a href="#">Download </a>
+							</li>
+							<li>
+								<a href="#">Pricing</a>
+							</li>
+							<li>
+								<a href="#">Locations</a>
+							</li>
+							<li>
+								<a href="#">Server</a>
+							</li>
+							<li>
+								<a href="#">Countries</a>
+							</li>
+							<li><a href="#">ProdBloguct</a></li>
+
+						</ul>
+					</div>
+					<div class="footer__column column3">
+						<ul class="footer__list">
+							<li class="footer__list-name">
+								Engage
+							</li>
+							<li>
+								<a href="#">LaslesVPN</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li><a href="#">Tutorials</a></li>
+							<li>
+								<a href="#">About Us</a>
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#">Terms of Service</a>
+							</li>
+							
+
+						</ul>
+					</div>
+					<div class="footer__column column4">
+						<ul class="footer__list">
+							<li class="footer__list-name">
+							Earn Money
+							</li>
+							<li>
+								<a  href="#">Affiliate</a>
+							</li>
+							<li>
+								<a href="#">	Become Partner
+								</a>
+							</li>
+						
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/46880a676a.js" crossorigin="anonymous"></script>
+
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
