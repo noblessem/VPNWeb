@@ -24,11 +24,11 @@ const swiper = new Swiper('.swiper-container', {
 		prevEl: '.button-prev',
 	},
 	breakpoints: {
-		382:{
+		382: {
 			slidesPerView: 1.2,
-		slidesPerGroup: 1,
+			slidesPerGroup: 1,
 
-		spaceBetween: 30,
+			spaceBetween: 30,
 
 		},
 		543: {
@@ -109,7 +109,7 @@ function burgerUse() {
 	menu = document.getElementById("header__nav");
 	const menuChooseItem = document.querySelectorAll('.header__nav-link');
 	bodyLock = document.getElementById("body");
-	
+
 	for (var i = 0; i < menuChooseItem.length; i++) {
 		menuChooseItem[i].addEventListener('click', () => {
 			console.log("DICK")
