@@ -1205,7 +1205,8 @@ img {
 	}
 	.header__nav {
 		position: absolute;
-		display: none;
+		width: 100%;
+		left: -100%;
 	}
 	.header__nav-list-container {
 		flex-direction: column;
@@ -1256,7 +1257,7 @@ img {
 	.header-active {
 		position: fixed;
 		left: 0;
-
+		
 		width: 100%;
 		height: 100%;
 		transform: translateX(0);
