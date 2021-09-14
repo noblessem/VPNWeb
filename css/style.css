@@ -946,7 +946,9 @@ img {
 .customers__desc {
 	padding-top: 20px;
 }
+
 .slider-carousel {
+	
 	padding-top: 60px;
 	overflow: hidden;
 }
@@ -1014,7 +1016,9 @@ img {
 	border-radius: 10px;
 	width: 20px;
 }
-
+.swiper-slide{
+	height: 100%;
+}
 .slide-content {
 	padding: 30px;
 	border: 2px solid #dddddd;
@@ -1022,8 +1026,11 @@ img {
 	border-radius: 10px;
 	background: #ffffff;
 	max-width: 400px;
-	min-height: 250px;
-	max-height: 250px;
+	min-height: 300px;
+	
+}
+.comment__text{
+	
 }
 
 .swiper-button-next {
